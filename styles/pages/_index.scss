@@ -1,0 +1,57 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+}
+
+.norvege {
+    background-image: url(../../img/norvege.jpg);
+    background-size: cover;
+    border-right: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: white;
+    }
+}
+
+.suede {
+    background-image: url(../../img/suede.JPG);
+    background-size: cover;
+    background-position: center;
+    border-right: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: white;
+    }
+}
+
+.islande {
+    background-image: url(../../img/islande.jpg);
+    background-size: cover;
+    background-position: center;
+    border-right: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            transform: rotate(180deg) scale(1.5);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/* Design system */
+
+/* Colors */
+$c-blue: #353aa9;
+$c-white: #FFF;
+$c-red: #9e222c;
+
+
+/* Text */
+@mixin header-font {
+    font: 500 3rem 'Permanent Marker';
+}
+
+@mixin subtitle-font {
+    font: 1rem Handlee;
+}
+
+@mixin body-font {
+    font: 1.2rem Handlee;
+}
+
+
+
+
+body {
+    @include body-font()
+}
+
+a div, span {
+    @include subtitle-font()
+}
+
+h1,
+a {
+    @include header-font()
+}
